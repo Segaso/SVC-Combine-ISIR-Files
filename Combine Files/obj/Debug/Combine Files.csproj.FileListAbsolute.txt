@@ -1,0 +1,18 @@
+\\svcfs01\lkelley$\my documents\visual studio 2013\Projects\Combine Files\Combine Files\bin\Debug\Combine Files.exe.config
+\\svcfs01\lkelley$\My Documents\Visual Studio 2013\Projects\Combine Files\Combine Files\bin\Debug\Combine Files.exe
+\\svcfs01\lkelley$\My Documents\Visual Studio 2013\Projects\Combine Files\Combine Files\bin\Debug\Combine Files.pdb
+\\svcfs01\lkelley$\My Documents\Visual Studio 2013\Projects\Combine Files\Combine Files\obj\Debug\Combine Files.csprojResolveAssemblyReference.cache
+\\svcfs01\lkelley$\My Documents\Visual Studio 2013\Projects\Combine Files\Combine Files\obj\Debug\Combine_Files.Properties.Resources.resources
+\\svcfs01\lkelley$\My Documents\Visual Studio 2013\Projects\Combine Files\Combine Files\obj\Debug\Combine Files.csproj.GenerateResource.Cache
+\\svcfs01\lkelley$\My Documents\Visual Studio 2013\Projects\Combine Files\Combine Files\obj\Debug\Combine Files.exe
+\\svcfs01\lkelley$\My Documents\Visual Studio 2013\Projects\Combine Files\Combine Files\obj\Debug\Combine Files.pdb
+\\svcfs01\lkelley$\My Documents\Visual Studio 2013\Projects\Combine Files\Combine Files\obj\Debug\Combine_Files.Main.resources
+I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\bin\Debug\Combine Files.exe.config
+I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Debug\Combine Files.exe
+I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Debug\Combine Files.pdb
+I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\bin\Debug\Combine Files.exe
+I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\bin\Debug\Combine Files.pdb
+I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Debug\Combine Files.csprojResolveAssemblyReference.cache
+I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Debug\Combine_Files.Main.resources
+I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Debug\Combine_Files.Properties.Resources.resources
+I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Debug\Combine Files.csproj.GenerateResource.Cache
