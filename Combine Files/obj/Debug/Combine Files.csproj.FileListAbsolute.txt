@@ -16,3 +16,12 @@ I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Deb
 I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Debug\Combine_Files.Main.resources
 I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Debug\Combine_Files.Properties.Resources.resources
 I:\CodeRepository\Applications (Source)\Combine ISIR Files\Combine Files\obj\Debug\Combine Files.csproj.GenerateResource.Cache
+\\SVCFS01\D Drive\IT\CodeRepository\Applications (Source)\Combine ISIR Files\SVC-Combine-ISIR-Files\Combine Files\bin\Debug\Combine Files.exe.config
+\\SVCFS01\D Drive\IT\CodeRepository\Applications (Source)\Combine ISIR Files\SVC-Combine-ISIR-Files\Combine Files\obj\Debug\Combine Files.exe
+\\SVCFS01\D Drive\IT\CodeRepository\Applications (Source)\Combine ISIR Files\SVC-Combine-ISIR-Files\Combine Files\obj\Debug\Combine Files.pdb
+\\SVCFS01\D Drive\IT\CodeRepository\Applications (Source)\Combine ISIR Files\SVC-Combine-ISIR-Files\Combine Files\bin\Debug\Combine Files.exe
+\\SVCFS01\D Drive\IT\CodeRepository\Applications (Source)\Combine ISIR Files\SVC-Combine-ISIR-Files\Combine Files\bin\Debug\Combine Files.pdb
+\\SVCFS01\D Drive\IT\CodeRepository\Applications (Source)\Combine ISIR Files\SVC-Combine-ISIR-Files\Combine Files\obj\Debug\Combine Files.csprojResolveAssemblyReference.cache
+\\SVCFS01\D Drive\IT\CodeRepository\Applications (Source)\Combine ISIR Files\SVC-Combine-ISIR-Files\Combine Files\obj\Debug\Combine_Files.Main.resources
+\\SVCFS01\D Drive\IT\CodeRepository\Applications (Source)\Combine ISIR Files\SVC-Combine-ISIR-Files\Combine Files\obj\Debug\Combine_Files.Properties.Resources.resources
+\\SVCFS01\D Drive\IT\CodeRepository\Applications (Source)\Combine ISIR Files\SVC-Combine-ISIR-Files\Combine Files\obj\Debug\Combine Files.csproj.GenerateResource.Cache

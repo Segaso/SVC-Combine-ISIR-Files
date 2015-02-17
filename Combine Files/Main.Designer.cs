@@ -74,6 +74,7 @@
             // lbFileNames
             // 
             this.lbFileNames.FormattingEnabled = true;
+            this.lbFileNames.HorizontalScrollbar = true;
             this.lbFileNames.Location = new System.Drawing.Point(7, 20);
             this.lbFileNames.Name = "lbFileNames";
             this.lbFileNames.Size = new System.Drawing.Size(247, 95);

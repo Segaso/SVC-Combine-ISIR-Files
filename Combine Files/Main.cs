@@ -37,9 +37,19 @@
                         var Text = File.ReadAllText(FilePath);
                         File.AppendAllText(SaveFileDialog.FileName + ".dat", Text); 
                     }
+                    //Genereate Log File
+                    GenerateLogFile(this.SaveFileDialog.FileName);
+
                     //Open folder for viewing.
                     Process.Start(Path.GetDirectoryName(SaveFileDialog.FileName + ".dat"));
                 }
+            }
+        }
+
+
+        private void GenerateLogFile(string FileName) {
+            foreach (var FilePath in Files) {
+                File.AppendAllText(FileName + ".log", FilePath + Environment.NewLine);
             }
         }
     }
