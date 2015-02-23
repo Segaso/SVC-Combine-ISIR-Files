@@ -71,24 +71,26 @@
         }
 
         private void btnAutoLoad_Click(object sender, EventArgs e) {
-            //Format the year so that only the last two digits remain.
-            string Year = this.cbAutoLoadYear.SelectedItem.ToString();
-            Year = Year.Substring(Year.Length - 2);
+            if (Properties.Settings.Default.ISIRDirectory != string.Empty || listISIRNames.Items.Count > 0) {
+                //Format the year so that only the last two digits remain.
+                string Year = this.cbAutoLoadYear.SelectedItem.ToString();
+                Year = Year.Substring(Year.Length - 2);
 
-            var FilteredFiles = new List<string>();
-            foreach (var Filter in Properties.Settings.Default.ISIRFileNames) {
-                FilteredFiles.AddRange(Directory
-                                       .EnumerateFiles(Properties.Settings.Default.ISIRDirectory)
-                                       .Where(F => F.Contains(Filter + Year))
-                                       .ToList());
+                var FilteredFiles = new List<string>();
+                foreach (var Filter in Properties.Settings.Default.ISIRFileNames) {
+                    FilteredFiles.AddRange(Directory
+                                           .EnumerateFiles(Properties.Settings.Default.ISIRDirectory)
+                                           .Where(F => F.Contains(Filter + Year))
+                                           .ToList());
+                }
+
+                //Backup Files - Remove from List
+                var Reject = FilteredFiles.Where(F => F.Contains("BK."));
+                FilteredFiles = FilteredFiles.Except(Reject).ToList();
+
+                FilteredFiles = FilteredFiles.Distinct().OrderBy(F => F).ToList();
+                lbFileNames.Items.AddRange(FilteredFiles.ToArray());
             }
-
-            //Backup Files - Remove from List
-            var Reject = FilteredFiles.Where(F => F.Contains("BK."));
-            FilteredFiles = FilteredFiles.Except(Reject).ToList();
-
-            FilteredFiles = FilteredFiles.Distinct().OrderBy(F => F).ToList();
-            lbFileNames.Items.AddRange(FilteredFiles.ToArray());
 
         }
 
