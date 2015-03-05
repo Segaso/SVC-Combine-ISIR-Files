@@ -34,7 +34,6 @@
             this.cbAutoLoadYear = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpCombine = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -56,10 +55,12 @@
             this.btnBrowseBrowse = new System.Windows.Forms.Button();
             this.btnSaveSettings = new System.Windows.Forms.Button();
             this.FolderBrowseDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.gbFiles.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCombine.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -67,14 +68,17 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBrowse
             // 
             this.btnBrowse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBrowse.Location = new System.Drawing.Point(3, 16);
+            this.btnBrowse.Location = new System.Drawing.Point(0, 0);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(488, 29);
+            this.btnBrowse.Size = new System.Drawing.Size(244, 48);
             this.btnBrowse.TabIndex = 0;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.UseVisualStyleBackColor = true;
@@ -83,9 +87,9 @@
             // btnSave
             // 
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Location = new System.Drawing.Point(3, 373);
+            this.btnSave.Location = new System.Drawing.Point(253, 373);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(494, 48);
+            this.btnSave.Size = new System.Drawing.Size(244, 48);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -101,11 +105,12 @@
             // 
             // gbFiles
             // 
+            this.tableLayoutPanel2.SetColumnSpan(this.gbFiles, 2);
             this.gbFiles.Controls.Add(this.lbFileNames);
             this.gbFiles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbFiles.Location = new System.Drawing.Point(3, 3);
             this.gbFiles.Name = "gbFiles";
-            this.gbFiles.Size = new System.Drawing.Size(494, 256);
+            this.gbFiles.Size = new System.Drawing.Size(494, 364);
             this.gbFiles.TabIndex = 2;
             this.gbFiles.TabStop = false;
             this.gbFiles.Text = "Files";
@@ -117,16 +122,15 @@
             this.lbFileNames.HorizontalScrollbar = true;
             this.lbFileNames.Location = new System.Drawing.Point(3, 16);
             this.lbFileNames.Name = "lbFileNames";
-            this.lbFileNames.Size = new System.Drawing.Size(488, 237);
+            this.lbFileNames.Size = new System.Drawing.Size(488, 345);
             this.lbFileNames.TabIndex = 0;
             this.lbFileNames.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.lbFileNames_PreviewKeyDown);
             // 
             // btnAutoLoad
             // 
-            this.btnAutoLoad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAutoLoad.Location = new System.Drawing.Point(149, 3);
+            this.btnAutoLoad.Location = new System.Drawing.Point(40, 3);
             this.btnAutoLoad.Name = "btnAutoLoad";
-            this.btnAutoLoad.Size = new System.Drawing.Size(336, 23);
+            this.btnAutoLoad.Size = new System.Drawing.Size(82, 23);
             this.btnAutoLoad.TabIndex = 3;
             this.btnAutoLoad.Text = "Load ISIR Files";
             this.btnAutoLoad.UseVisualStyleBackColor = true;
@@ -134,23 +138,21 @@
             // 
             // cbAutoLoadYear
             // 
-            this.cbAutoLoadYear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbAutoLoadYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAutoLoadYear.FormattingEnabled = true;
             this.cbAutoLoadYear.Items.AddRange(new object[] {
             "Select Year"});
             this.cbAutoLoadYear.Location = new System.Drawing.Point(3, 3);
             this.cbAutoLoadYear.Name = "cbAutoLoadYear";
-            this.cbAutoLoadYear.Size = new System.Drawing.Size(140, 21);
+            this.cbAutoLoadYear.Size = new System.Drawing.Size(31, 21);
             this.cbAutoLoadYear.TabIndex = 4;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 265);
+            this.groupBox1.Location = new System.Drawing.Point(18, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(494, 48);
+            this.groupBox1.Size = new System.Drawing.Size(131, 48);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Automatically Load ISIRs";
@@ -167,19 +169,8 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(488, 29);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(125, 29);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnBrowse);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(3, 319);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(494, 48);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Manual Loadding";
             // 
             // tabControl1
             // 
@@ -206,20 +197,19 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.gbFiles, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnSave, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.groupBox2, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.groupBox1, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnSave, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(500, 424);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
@@ -421,6 +411,34 @@
             this.btnSaveSettings.UseVisualStyleBackColor = true;
             this.btnSaveSettings.Click += new System.EventHandler(this.btnSaveSettings_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 373);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(244, 48);
+            this.panel1.TabIndex = 7;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(244, 48);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnBrowse);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(244, 48);
+            this.panel3.TabIndex = 1;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,7 +451,6 @@
             this.gbFiles.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tpCombine.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -443,6 +460,9 @@
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -458,7 +478,6 @@
         private System.Windows.Forms.Button btnAutoLoad;
         private System.Windows.Forms.ComboBox cbAutoLoadYear;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tpCombine;
@@ -481,6 +500,9 @@
         private System.Windows.Forms.Button btnBrowseBrowse;
         private System.Windows.Forms.Button btnSaveSettings;
         private System.Windows.Forms.FolderBrowserDialog FolderBrowseDialog;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
